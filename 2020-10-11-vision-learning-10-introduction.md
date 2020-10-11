@@ -27,3 +27,8 @@ categories: [vision, course, git]
 
 ### 在Windows上安装git
 	
+	在Windows上使用Git，可以从Git官网直接下载安装程序(https://git-scm.com/downloads)，然后按默认选项安装即可，此处不做赘述。
+
+	安装完成后，在开始菜单里找到“Git”->“Git Bash”，弹出类似下图所示的类命令行窗口，则说明Git安装成功！
+	
+	
