@@ -110,7 +110,7 @@ code.cpp文件编辑完毕后，在git bash命令行中输入以下指令：
 
 输入指令后你将出现以下结果：
 
-![img](https://github.com/void-zxh/RM/blob/master/image/5.JPG) 
+![img](https://github.com/void-zxh/RM/blob/master/image/6.JPG) 
 
 此时你的文件已经添加成功了
 
@@ -121,3 +121,38 @@ code.cpp文件编辑完毕后，在git bash命令行中输入以下指令：
 	git commit -m "first repo"
 
 ### 文件版本回溯
+
+git 在用户每次commit之后，都保留了一个上传的仓库文件的历史版本，方便我们回溯历史版本。
+
+在我们回溯版本之前，我们需要先查看所需回溯的版本号，
+
+在所在仓库目录打开git bash，在命令行中输入git log指令,得到以下结果：
+（PS：我在实现git了三个不同的code.cpp文件）
+
+![img](https://github.com/void-zxh/RM/blob/master/image/7.JPG) 
+
+若闲输出内容过多，可添加--pretty=oneline参数，得到如下结果
+
+![img](https://github.com/void-zxh/RM/blob/master/image/8.JPG) 
+
+其中类似于 30a3af159d3bac7c9d3623c5c8171353f6ac1057的乱码为你每次commit的版本号
+
+现在，你们若想回溯到之前的某个历史版本，则在命令行中输入以下格式的命令
+
+	git reset --hard commit_id
+
+则你当前版本便回溯至commit_id的版本（PS：此处的commit_id的版本号无需全部输入，只需输入开头号码，git会自动匹配开头相同的版本号）
+
+具体例子如下图所示：
+
+![img](https://github.com/void-zxh/RM/blob/master/image/9.JPG)
+
+此时你的版本便恢复到first code时的版本
+
+若你误操作了，想要恢复"未来"的某个版本，将commit_id改为未来版本的版本号即可
+
+如果版本号没记住怎么办？？在命令行中输入 git reflog 命令，得到以下结果：
+
+![img](https://github.com/void-zxh/RM/blob/master/image/10.JPG)
+
+git reflog可以查看版本变化的历史，从中选取所需的版本号回溯即可
