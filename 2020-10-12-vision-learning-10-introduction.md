@@ -92,3 +92,32 @@ git是一种文件版本控制系统，我们可以建立自己的仓库(版本�
 ### 添加文件到版本库
 
 首先我们先明确一点，所有的版本控制系统，其实只能跟踪文本文件的改动，比如txt文件，html文件，所有的程序代码等等，Git也不例外。版本控制系统可以告诉你每次的改动，比如你在某行插入了一个函数，敲了一个回车等等。而图片、视频这些二进制文件，虽然也能由版本控制系统管理，但没法跟踪文件的变化，只能把二进制文件每次改动串起来，也就是只知道图片从100KB改成了120KB，但到底改了啥，版本控制系统无法知道。
+
+PS：一般不用记事本处理或添加文本文件，就算要用Notepad，那么Notepad++不香吗？
+
+下面以添加文件code.cpp为例展示添加文件的具体过程
+
+首先在所见仓库的目录下保存一个code.cpp文件
+
+![img](https://github.com/void-zxh/RM/blob/master/image/5.JPG) 
+
+code.cpp文件编辑完毕后，在git bash命令行中输入以下指令：
+
+	git add code.cpp
+	git commit -m "first code"
+	
+对于git commit指令，-m之后的输入为你这次提交所写的说明
+
+输入指令后你将出现以下结果：
+
+![img](https://github.com/void-zxh/RM/blob/master/image/5.JPG) 
+
+此时你的文件已经添加成功了
+
+此外，你还可以通过输入多条git add指令后输入git commit，起到同时添加多个文件的效果，指令例如如下所示：
+
+	git add code.cpp
+	git add sp.htm
+	git commit -m "first repo"
+
+### 文件版本回溯
