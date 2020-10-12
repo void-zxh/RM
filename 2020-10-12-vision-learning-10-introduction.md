@@ -77,8 +77,14 @@ git是一种文件版本控制系统，我们可以建立自己的仓库(版本�
 
 若不确定当前目录，可查看命令行窗口上目录或输入pwd命令查看，如下图所示
 
-(pwd命令用于显示当前目录)
+(PS:pwd命令用于显示当前目录)
 
 ![img](https://github.com/void-zxh/RM/blob/master/image/3.JPG) 
 
 ![img](https://github.com/void-zxh/RM/blob/master/image/2.JPG) 
+
+接着，在命令行中输入git init命令把这个目录变成Git可以管理的仓库，得到下图所示结果：
+
+![img](https://github.com/void-zxh/RM/blob/master/image/4.JPG) 
+
+此时一个空的仓库便建好了，可以发现当前目录下多了一个.git的目录，这个目录是Git来跟踪管理版本库的，没事千万不要手欠手动修改这个目录里面的文件，不然大概率这个Git仓库就给破坏了。
