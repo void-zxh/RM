@@ -12,7 +12,7 @@ categories: [vision, course, git]
 # Git 教程
 ## 一、什么是git
 
-### git是一个版本控制系统
+### git是文件的版本控制系统
 - 多版本分支
 - 多人合作
 - 简单低成本的备份及版本回退
