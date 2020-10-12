@@ -32,4 +32,5 @@ categories: [vision, course, git]
 
 安装完成后，在开始菜单里找到“Git”->“Git Bash”，弹出类似下图所示的类命令行窗口
 
+<img src="https://https://github.com/void-zxh/RM/tree/master/image/1.jpg"   width="400">
 
