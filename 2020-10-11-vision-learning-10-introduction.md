@@ -38,6 +38,16 @@ categories: [vision, course, git]
 
 于是我们对此进行设置，在命令行中输入一下语句（Your name为你的用户名，email@example.com为你的邮箱地址）
 
-	$ git config --global user.name "Your Name"
-	$ git config --global user.email "email@example.com"
+	git config --global user.name "Your Name"
+	git config --global user.email "email@example.com"
+
+注意: git config命令的--global参数，这意味着你这台机器上所有的Git仓库都会使用这个配置，
+
+若想给特定的项目仓库指定单独的用户名与邮箱地址，则可遵循以下步骤
+
+打开项目所在的.git文件夹(隐藏，可通过设置显示)，在此文件夹下打开git命令行窗口
+输入以下命令：
+
+	git config user.name  "Your Name"
+	git config user.email "email@example.com"
 
