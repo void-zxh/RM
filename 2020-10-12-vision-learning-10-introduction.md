@@ -156,3 +156,26 @@ git 在用户每次commit之后，都保留了一个上传的仓库文件的历�
 ![img](https://github.com/void-zxh/RM/blob/master/image/10.JPG)
 
 git reflog可以查看版本变化的历史，从中选取所需的版本号回溯即可
+
+### 添加远程库
+### 从远程库克隆
+克隆远程库的操作极为简单，在你想要克隆到的仓库的目录下打开git bash后
+
+输入以下格式的指令即可：
+
+	git clone http_addr
+
+得到结果例如下图：
+
+![img](https://github.com/void-zxh/RM/blob/master/image/11.JPG)
+
+此方法为通过https协议克隆，亦可使用ssh协议进行clone，不过需要实现配置SSH密钥，过程较多，感兴趣的同学可自行上网搜索教程学习
+
+## 四、小结
+在本教程中，我们介绍了git的安装以及git基本的建库、添加文件、版本回溯、关联远程库、克隆远程库的功能，初步实现了其版本控制系统的功能
+
+若还想学习git其他功能的同学可自行上网搜索教程学习
+
+参考教程：https://www.liaoxuefeng.com/wiki/896043488029600
+
+作者：郑心浩
