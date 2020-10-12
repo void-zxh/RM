@@ -51,3 +51,8 @@ categories: [vision, course, git]
 	git config user.name  "Your Name"
 	git config user.email "email@example.com"
 
+至此，安装git与初步设置的过程就结束了
+
+## 三、git相关功能与命令介绍
+
+### 创建版本库
