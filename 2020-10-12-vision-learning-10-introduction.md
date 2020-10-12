@@ -77,6 +77,6 @@ git是一种文件版本控制系统，我们可以建立自己的仓库(版本�
 
 (pwd命令用于显示当前目录)
 
-![img](https://github.com/void-zxh/RM/blob/master/image/2.JPG) 
-
 ![img](https://github.com/void-zxh/RM/blob/master/image/3.JPG) 
+
+![img](https://github.com/void-zxh/RM/blob/master/image/2.JPG) 
